@@ -104,6 +104,82 @@ You may assume that the array is non-empty and the majority element always exist
 """
 
 
+175. combine-two-tables
+"""
+Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
+"""
+use left join
+
+
+176. second-highest-salary
+"""
+Write a SQL query to get the second highest salary from the Employee table.
+"""
+
+
+177. nth-highest-salary
+"""
+Write a SQL query to get the nth highest salary from the Employee table.
+"""
+
+
+178. rank-scores
+"""
+Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no "holes" between ranks.
+"""
+
+
+180. consecutive-numbers
+"""
+Write a SQL query to find all numbers that appear at least three times consecutively.
+"""
+
+
+181. employees-earning-more-than-their-managers
+"""
+The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
+"""
+Using multiple tables select is better than using two tables join.
+I.e., first sql is better than second one.
+
+
+182. duplicate-emails
+"""
+Write a SQL query to find all duplicate emails in a table named Person.
+"""
+
+
+183. customers-who-never-order
+"""
+Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
+"""
+Using join would be much faster than using "not in (select ...)"
+
+
+184. department-highest-salary
+"""
+Write a SQL query to find employees who have the highest salary in each of the departments. For the above tables, Max has the highest salary in the IT department and Henry has the highest salary in the Sales department.
+"""
+
+
+185. department-top-three-salaries
+"""
+Write a SQL query to find employees who earn the top three salaries in each of the department. For the above tables, your SQL query should return the following rows.
+"""
+
+
+196. delete-duplicate-emails
+"""
+Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
+"""
+
+
+197. rising-temperature
+"""
+Given a Weather table, write a SQL query to find all dates' Ids with higher temperature compared to its previous (yesterday's) dates.
+"""
+
+
 220. contains-duplicate-iii
 """
 Given an array of integers, find out whether there are two distinct indices i and j in the array
@@ -142,6 +218,10 @@ For example, a BST is [6, 2, 8, 0, 4, 7, 9, #, #, 3, 5]
          3   5
 Then LCA of nodes 2 and 8 is node 6, LCA of nodes 2 and 4 is node 2.
 """
+
+
+262. trips-and-users
+round(float_number, 2)
 
 
 274. h-index
