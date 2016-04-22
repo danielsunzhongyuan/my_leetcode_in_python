@@ -14,6 +14,36 @@ Implement pow(x, n)
 n maybe a negtive number
 
 
+56. merge-intervals
+"""
+Given a collection of intervals, merge all overlapping intervals.
+
+For example,
+Given [1,3],[2,6],[8,10],[15,18],
+return [1,6],[8,10],[15,18].
+"""
+Using insert function(Q57) to insert the each interval into another list makes the efficiency quite low.
+TODO: improve the efficiency.
+
+
+57. insert-interval
+"""
+Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
+
+You may assume that the intervals were initially sorted according to their start times.
+
+Example 1:
+Given intervals [1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].
+
+Example 2:
+Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10],[12,16].
+
+This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
+"""
+
+Solution2 is much simplied, however the runtime is larger than that of Solution, a little weird.
+
+
 69. sqrtx
 Implement int sqrt(int x).
 Compute and return the square root of x.
@@ -86,6 +116,21 @@ c. from B to E, take C as an example:
     if C > 1, then result += AB99 + 1
     if C = 1, then result += ABDE + 1
     if C = 0, then result += (AB-1)DE + 1
+
+
+235. lowest-common-ancestor-of-a-binary-search-tree
+"""
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+For example, a BST is [6, 2, 8, 0, 4, 7, 9, #, #, 3, 5]
+        _______6______
+       /              \
+    ___2__          ___8__
+   /      \        /      \
+   0      _4       7       9
+         /  \
+         3   5
+Then LCA of nodes 2 and 8 is node 6, LCA of nodes 2 and 4 is node 2.
+"""
 
 
 274. h-index
