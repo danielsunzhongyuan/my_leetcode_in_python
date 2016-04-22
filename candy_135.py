@@ -95,8 +95,5 @@ def main():
     print a.candy(b6)
 
 
-
-
-
 if __name__ == "__main__":
     main()

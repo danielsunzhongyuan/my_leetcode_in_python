@@ -45,6 +45,17 @@ or
 2. It doesn't matter to scan the ratings from left to right firstly or from right to left firstly.
 
 
+144. binary-tree-preorder-traversal
+"""
+Given a binary tree, return the preorder traversal of its nodes' values.
+
+For example:
+Given binary tree {1,#,2,3}, return [1, 2, 3]
+
+Note: Recursive solution is trivial, could you do it iteratively?
+"""
+
+
 169. majority-element
 """
 Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
@@ -103,6 +114,16 @@ You are a product manager and currently leading a team to develop a new product.
 Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
 
 You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
+"""
+
+
+292. nim-game
+"""
+You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+
+Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
+
+For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
 """
 
 
