@@ -91,3 +91,19 @@ class Solution4(object):
             if i == 0 and nums[0] < lastIndex:
                 return False
         return nums[0] >= lastIndex
+
+
+class Solution5(object):
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        length = len(nums)
+        if length < 2:
+            return True
+        lastIndex = length - 1
+        for i in xrange(length - 2, -1, -1):
+            if nums[i] >= lastIndex - i:
+                lastIndex = i
+        return 0 == lastIndex

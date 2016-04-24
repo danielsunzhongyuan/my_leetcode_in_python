@@ -61,6 +61,8 @@ it failed because "range" will create a space to store a huge number of integers
 Then I try to use "xrange" instead of "range", it succeeds.
 xrange will only create a space for one integer.
 
+Solution5 is simplified from Solution four, after reading the article.
+
 
 56. merge-intervals
 """
