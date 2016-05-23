@@ -99,8 +99,39 @@ Implement int sqrt(int x).
 Compute and return the square root of x.
 
 
-135. candy
+88. merge-sorted-array
 """
+Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
+
+Note:
+You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
+"""
+
+
+103. binary-tree-zigzag-level-order-traversal
+"""
+Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
+
+For example:
+Given binary tree {3,9,20,#,#,15,7},
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+return its zigzag level order traversal as:
+
+[
+    [3],
+    [20,9],
+    [15,7]
+]
+"""
+
+
+135. candy
 """
 There are N children standing in a line. Each child is assigned a rating value.
 
@@ -146,6 +177,11 @@ Note: Recursive solution is trivial, could you do it iteratively?
 Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
 You may assume that the array is non-empty and the majority element always exist in the array.
 """
+
+
+172. factorial-trailing-zeroes
+Given an integer n, return the number of trailing zeroes in n!.
+Note: Your solution should be in logarithmic time complexity.
 
 
 175. combine-two-tables
@@ -307,6 +343,18 @@ For example, if there are 4 stones in the heap, then you will never win the game
 """
 
 
+316. remove-duplicate-letters
+ Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+
+ Example:
+
+ Given "bcabc"
+ Return "abc"
+
+ Given "cbacdcbc"
+ Return "acdb" 
+
+
 326. power-of-three
 Given an integer, write a function to determine if it is a power of three.
 
@@ -325,3 +373,26 @@ Space complexity should be O(n).
 Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
 """
 Solution2 is better
+
+
+345. reverse-vowels-of-a-string
+Write a function that takes a string as input and reverse only the vowels of a string.
+
+Example 1:
+Given s = "hello", return "holle".
+
+Example 2:
+Given s = "leetcode", return "leotcede". 
+
+
+350. intersection-of-two-arrays-ii
+Given two arrays, write a function to compute their intersection.
+
+Example:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+
+Note:
+
+    Each element in the result should appear as many times as it shows in both arrays.
+    The result can be in any order.
+
