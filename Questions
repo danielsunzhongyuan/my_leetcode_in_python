@@ -117,6 +117,14 @@ You may assume that nums1 has enough space (size that is greater or equal to m +
 """
 
 
+100. same-tree
+"""
+Given two binary trees, write a function to check if they are equal or not.
+
+Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+"""
+
+
 103. binary-tree-zigzag-level-order-traversal
 """
 Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
@@ -137,6 +145,14 @@ return its zigzag level order traversal as:
     [20,9],
     [15,7]
 ]
+"""
+
+
+104. maximum-depth-of-binary-tree
+"""
+Given a binary tree, find its maximum depth.
+
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 """
 
 
