@@ -335,6 +335,19 @@ Given a Weather table, write a SQL query to find all dates' Ids with higher temp
 """
 
 
+202. happy-number
+Write an algorithm to determine if a number is "happy".
+
+A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
+
+Example: 19 is a happy number
+
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
+
+
 220. contains-duplicate-iii
 """
 Given an array of integers, find out whether there are two distinct indices i and j in the array
@@ -421,6 +434,14 @@ All root-to-leaf paths are:
 
 262. trips-and-users
 round(float_number, 2)
+
+
+263. ugly-number
+Write a program to check whether a given number is an ugly number.
+
+Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For example, 6, 8 are ugly while 14 is not ugly since it includes another prime factor 7.
+
+Note that 1 is typically treated as an ugly number.
 
 
 274. h-index
@@ -580,6 +601,17 @@ Output:
 Explanation:
 "bbaA" is also a valid answer, but "Aabb" is incorrect.
 Note that 'A' and 'a' are treated as two different characters.
+
+
+479. largest-palindrome-product
+Find the largest palindrome made from the product of two n-digit numbers.
+Since the result could be very large, you should return the largest palindrome mod 1337.
+
+Example:
+Input: 2
+Output: 987
+
+Explanation: 99 x 91 = 9009, 9009 % 1337 = 987
 
 
 500. keyboard-row
