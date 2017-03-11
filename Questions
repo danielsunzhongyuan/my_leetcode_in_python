@@ -1,10 +1,26 @@
 https://leetcode.com/problemset/algorithms/
 
 
+3. longest-substring-without-repeating-characters
+Given a string, find the length of the longest substring without repeating characters.
+
+Examples:
+
+Given "abcabcbb", the answer is "abc", which the length is 3.
+Given "bbbbb", the answer is "b", with the length of 1.
+Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+
 11. container-with-most-water
 Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
 
 Note: You may not slant the container and n is at least 2.
+
+
+12. integer-to-roman
+Given an integer, convert it to a roman numeral.
+
+Input is guaranteed to be within the range from 1 to 3999.
 
 
 16. 3sum-closest
@@ -109,6 +125,14 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 Solution2 is much simplied, however the runtime is larger than that of Solution, a little weird.
 
 
+61. rotate-list
+Given a list, rotate the list to the right by k places, where k is non-negative.
+
+For example:
+Given 1->2->3->4->5->NULL and k = 2,
+return 4->5->1->2->3->NULL.
+
+
 69. sqrtx
 Implement int sqrt(int x).
 Compute and return the square root of x.
@@ -137,6 +161,24 @@ Given two binary trees, write a function to check if they are equal or not.
 
 Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
 """
+
+
+102. binary-tree-level-order-traversal
+Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+
+For example:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its level order traversal as:
+[
+  [3],
+  [9,20],
+  [15,7]
+]
 
 
 103. binary-tree-zigzag-level-order-traversal
