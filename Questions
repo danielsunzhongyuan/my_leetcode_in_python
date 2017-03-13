@@ -416,6 +416,14 @@ Example: 19 is a happy number
 1^2 + 0^2 + 0^2 = 1
 
 
+203. remove-linked-list-elements
+Remove all elements from a linked list of integers that have value val.
+
+Example
+Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
+Return: 1 --> 2 --> 3 --> 4 --> 5
+
+
 220. contains-duplicate-iii
 """
 Given an array of integers, find out whether there are two distinct indices i and j in the array
