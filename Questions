@@ -350,6 +350,30 @@ Given an integer n, return the number of trailing zeroes in n!.
 Note: Your solution should be in logarithmic time complexity.
 
 
+174. dungeon-game
+The demons had captured the princess (P) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight (K) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess.
+
+The knight has an initial health point represented by a positive integer. If at any point his health point drops to 0 or below, he dies immediately.
+
+Some of the rooms are guarded by demons, so the knight loses health (negative integers) upon entering these rooms; other rooms are either empty (0's) or contain magic orbs that increase the knight's health (positive integers).
+
+In order to reach the princess as quickly as possible, the knight decides to move only rightward or downward in each step.
+
+
+Write a function to determine the knight's minimum initial health so that he is able to rescue the princess.
+
+For example, given the dungeon below, the initial health of the knight must be at least 7 if he follows the optimal path RIGHT-> RIGHT -> DOWN -> DOWN.
+
+-2 (K)    -3    3
+-5    -10    1
+10    30    -5 (P)
+
+Notes:
+
+The knight's health has no upper bound.
+Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
+
+
 175. combine-two-tables
 """
 Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
@@ -739,10 +763,8 @@ n is a non-negative integer and fits within the range of a 32-bit signed integer
 Given a string, sort it in decreasing order based on the frequency of characters.
 
 Example 1:
-
 Input:
 "tree"
-
 Output:
 "eert"
 
@@ -750,10 +772,8 @@ Explanation:
 'e' appears twice while 'r' and 't' both appear once.
 So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
 Example 2:
-
 Input:
 "cccaaa"
-
 Output:
 "cccaaa"
 
@@ -761,16 +781,20 @@ Explanation:
 Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
 Note that "cacaca" is incorrect, as the same characters must be together.
 Example 3:
-
 Input:
 "Aabb"
-
 Output:
 "bbAa"
 
 Explanation:
 "bbaA" is also a valid answer, but "Aabb" is incorrect.
 Note that 'A' and 'a' are treated as two different characters.
+
+
+458. poor-pigs
+There are 1000 buckets, one and only one of them contains poison, the rest are filled with water. They all look the same. If a pig drinks that poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket contains the poison within one hour.
+
+Answer this question, and write an algorithm for the follow-up general case.
 
 
 479. largest-palindrome-product
