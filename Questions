@@ -558,6 +558,21 @@ Then LCA of nodes 2 and 8 is node 6, LCA of nodes 2 and 4 is node 2.
 """
 
 
+236. lowest-common-ancestor-of-a-binary-tree
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
+
+        _______3______
+       /              \
+    ___5__          ___1__
+   /      \        /      \
+   6      _2       0       8
+         /  \
+         7   4
+For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
+
+
 240. search-a-2d-matrix-ii
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 
@@ -749,6 +764,22 @@ Output:
 e
 Explanation:
 'e' is the letter that was added.
+
+
+401. binary-watch
+A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).
+Each LED represents a zero or one, with the least significant bit on the right.
+
+For example, the above binary watch reads "3:25".
+Given a non-negative integer n which represents the number of LEDs that are currently on, return all possible times the watch could represent.
+
+Example:
+Input: n = 1
+Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32"]
+Note:
+The order of output does not matter.
+The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
+The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
 
 
 434. number-of-segments-in-a-string
