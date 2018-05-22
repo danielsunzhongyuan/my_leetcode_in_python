@@ -1044,3 +1044,16 @@ Output: ["Alaska", "Dad"]
 Note:
 You may use one character in the keyboard more than once.
 You may assume the input string will only contain letters of alphabet.
+
+
+747. largest-number-at-least-twice-of-others
+In a given integer array nums, there is always exactly one largest element.
+Find whether the largest element in the array is at least twice as much as every other number in the array.
+If it is, return the index of the largest element, otherwise return -1.
+```
+Input: nums = [3, 6, 1, 0]
+Output: 1
+
+Input: nums = [1, 2, 3, 4]
+Output: -1
+```
