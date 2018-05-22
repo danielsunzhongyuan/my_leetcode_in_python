@@ -74,6 +74,12 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 
+26. remove-duplicates-from-sorted-array
+Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
+
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+
+
 27. remove-element
 Given an array and a value, remove all instances of that value in place and return the new length.
 Do not allocate extra space for another array, you must do this in place with constant memory.
@@ -139,6 +145,17 @@ Implement pow(x, n)
 n maybe a negtive number
 
 
+54. spiral-matrix
+Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+```
+Input:
+[[1,2,3],[4,5,6],[7,8,9]]
+
+Output:
+[1,2,3,6,9,8,7,4,5]
+```
+
+
 55. jump-game
 """
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -200,6 +217,16 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 Solution2 is much simplied, however the runtime is larger than that of Solution, a little weird.
 
 
+59. spiral-matrix-ii
+Given a positive integer n, generate a square matrix filled with elements from 1 to n^2 in spiral order.
+```
+Input: 3
+Output:
+[[1,2,3],[8,9,4],[7,6,5]]
+```
+
+
+
 61. rotate-list
 Given a list, rotate the list to the right by k places, where k is non-negative.
 
@@ -255,6 +282,12 @@ If nums = [1,2,3], a solution is:
   [1,2],
   []
 ]
+
+
+80. remove-duplicates-from-sorted-array-ii
+Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
+
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
 
 88. merge-sorted-array
