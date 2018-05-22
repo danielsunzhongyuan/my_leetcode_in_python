@@ -1057,6 +1057,21 @@ You may use one character in the keyboard more than once.
 You may assume the input string will only contain letters of alphabet.
 
 
+718. maximum-length-of-repeated-subarray
+Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
+
+Example 1:
+Input:
+A: [1,2,3,2,1]
+B: [3,2,1,4,7]
+Output: 3
+Explanation: 
+The repeated subarray with maximum length is [3, 2, 1].
+Note:
+	1 <= len(A), len(B) <= 1000
+	0 <= A[i], B[i] < 100
+
+
 747. largest-number-at-least-twice-of-others
 In a given integer array nums, there is always exactly one largest element.
 Find whether the largest element in the array is at least twice as much as every other number in the array.
