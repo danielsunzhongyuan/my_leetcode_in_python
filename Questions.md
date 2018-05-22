@@ -643,6 +643,17 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
 Count the number of prime numbers less than a non-negative number, n.
 
 
+209. minimum-size-subarray-sum
+Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
+Example: 
+```
+Input: [2,3,1,2,4,3], s = 7
+Output: 2
+```
+Explanation: the subarray [4,3] has the minimal length under the problem constraint.
+
+
+
 220. contains-duplicate-iii
 """
 Given an array of integers, find out whether there are two distinct indices i and j in the array
