@@ -11,18 +11,16 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        from collections import deque
         if root == None:
             return []
         ret = []
-        queue = deque()
-        queue.append(root)
+        queue = [root]
         count_of_one_level = 1
         while queue:
             tmp = []
             count_of_next_level = 0
             while count_of_one_level:
-                node = queue.popleft()
+                node = queue.pop(0)
                 tmp.append(node.val)
                 if node.left:
                     queue.append(node.left)
@@ -32,5 +30,5 @@ class Solution(object):
                     count_of_next_level += 1
                 count_of_one_level -= 1
             count_of_one_level = count_of_next_level
-            ret.insert(0, tmp)
-        return ret
+            ret.append(tmp)
+        return ret[::-1]
