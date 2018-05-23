@@ -1114,6 +1114,12 @@ Note:
 	0 <= A[i], B[i] < 100
 
 
+744. find-smallest-letter-greater-than-target
+Given a list of sorted characters letters containing only lowercase letters, and given a target letter target, find the smallest element in the list that is larger than the given target.
+
+Letters also wrap around. For example, if the target is target = 'z' and letters = ['a', 'b'], the answer is 'a'.
+
+
 747. largest-number-at-least-twice-of-others
 In a given integer array nums, there is always exactly one largest element.
 Find whether the largest element in the array is at least twice as much as every other number in the array.
