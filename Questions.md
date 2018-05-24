@@ -360,6 +360,45 @@ The maximum depth is the number of nodes along the longest path from the root no
 """
 
 
+105. construct-binary-tree-from-preorder-and-inorder-traversal
+Given preorder and inorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+For example, given
+
+preorder = [3,9,20,15,7]
+inorder = [9,3,15,20,7]
+Return the following binary tree:
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+
+106. construct-binary-tree-from-inorder-and-postorder-traversal
+Given inorder and postorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+For example, given
+
+inorder = [9,3,15,20,7]
+postorder = [9,15,7,20,3]
+Return the following binary tree:
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+
+
 107. binary-tree-level-order-traversal-ii
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 
@@ -694,6 +733,21 @@ Invert a binary tree.
     7     2
    / \   / \
   9   6 3   1
+
+
+228. summary-ranges
+Given a sorted integer array without duplicates, return the summary of its ranges.
+
+Example 1:
+
+Input:  [0,1,2,4,5,7]
+Output: ["0->2","4->5","7"]
+Explanation: 0,1,2 form a continuous range; 4,5 form a continuous range.
+Example 2:
+
+Input:  [0,2,3,4,6,8,9]
+Output: ["0","2->4","6","8->9"]
+Explanation: 2,3,4 form a continuous range; 8,9 form a continuous range.
 
 
 231. power-of-two
