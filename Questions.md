@@ -710,6 +710,20 @@ Output: 2
 Explanation: the subarray [4,3] has the minimal length under the problem constraint.
 
 
+215. kth-largest-element-in-an-array
+Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Example 1:
+
+Input: [3,2,1,5,6,4] and k = 2
+Output: 5
+Example 2:
+
+Input: [3,2,3,1,2,4,5,5,6] and k = 4
+Output: 4
+Note: 
+You may assume k is always valid, 1 ≤ k ≤ array's length.
+
 
 220. contains-duplicate-iii
 """
@@ -945,6 +959,22 @@ Note:
 
 326. power-of-three
 Given an integer, write a function to determine if it is a power of three.
+
+
+334. increasing-triplet-subsequence
+Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+
+Formally the function should:
+Return true if there exists i, j, k 
+such that arr[i] < arr[j] < arr[k] given 0 ≤ i < j < k ≤ n-1 else return false.
+Your algorithm should run in O(n) time complexity and O(1) space complexity.
+
+Examples:
+Given [1, 2, 3, 4, 5],
+return true.
+
+Given [5, 4, 3, 2, 1],
+return false.
 
 
 338. counting-bits
