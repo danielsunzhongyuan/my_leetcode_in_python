@@ -26,10 +26,10 @@ class Solution(object):
 
 
 def main():
-	s = Solution()
-	a = [2, 5, 3, 4, 5]
-	print s.increasingTriplet(a)
+    s = Solution()
+    a = [2, 5, 3, 4, 5]
+    print s.increasingTriplet(a)
 
 
 if __name__ == "__main__":
-	main()
+    main()
