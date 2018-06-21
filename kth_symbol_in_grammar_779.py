@@ -12,14 +12,20 @@ class Solution(object):
         :param K: int
         :return: int
         """
-        import bisect
-        if K == 1:
-            return 0
-        if K in self.a:
-            index = self.a.index(K)
-            return self.b[index]
-        x = bisect.bisect_left(self.a, K)
-        return 1 ^ self.kthGrammar(N, K - self.a[x - 1])
+        # import bisect
+        # if K == 1:
+        #     return 0
+        # if K in self.a:
+        #     index = self.a.index(K)
+        #     return self.b[index]
+        # x = bisect.bisect_left(self.a, K)
+        # return 1 ^ self.kthGrammar(N, K - self.a[x - 1])
+        import math
+        i = 0
+        while K > 1:
+            K -= 2 ** int(math.log(K - 1, 2))
+            i += 1
+        return 0 if i % 2 == 0 else 1
 
 
 def main():
