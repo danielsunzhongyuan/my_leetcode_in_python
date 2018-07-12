@@ -278,6 +278,23 @@ Given 1->2->3->4->5->NULL and k = 2,
 return 4->5->1->2->3->NULL.
 
 
+64. minimum-path-sum
+Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+
+Note: You can only move either down or right at any point in time.
+
+Example:
+
+Input:
+[
+  [1,3,1],
+  [1,5,1],
+  [4,2,1]
+]
+Output: 7
+Explanation: Because the path 1→3→1→1→1 minimizes the sum.
+
+
 69. sqrtx
 Implement int sqrt(int x).
 Compute and return the square root of x.
@@ -474,6 +491,21 @@ Return
   [1,3,3,1],
  [1,4,6,4,1]
 ]
+
+
+120. triangle
+Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+
+For example, given the following triangle
+
+[
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
+Note: Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.
 
 
 135. candy
@@ -763,6 +795,25 @@ Output: 2
 Explanation: the subarray [4,3] has the minimal length under the problem constraint.
 
 
+213. house-robber-ii
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+
+Example 1:
+
+Input: [2,3,2]
+Output: 3
+Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2),
+             because they are adjacent houses.
+Example 2:
+
+Input: [1,2,3,1]
+Output: 4
+Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+             Total amount you can rob = 1 + 3 = 4.
+
+
 215. kth-largest-element-in-an-array
 Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
@@ -1030,6 +1081,27 @@ Given [5, 4, 3, 2, 1],
 return false.
 
 
+337. house-robber-iii
+The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the "root." Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that "all houses in this place forms a binary tree". It will automatically contact the police if two directly-linked houses were broken into on the same night.
+
+Determine the maximum amount of money the thief can rob tonight without alerting the police.
+
+Example 1:
+     3
+    / \
+   2   3
+    \   \ 
+     3   1
+Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
+Example 2:
+     3
+    / \
+   4   5
+  / \   \ 
+ 1   3   1
+Maximum amount of money the thief can rob = 4 + 5 = 9.
+
+
 338. counting-bits
 """
 Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
@@ -1116,6 +1188,28 @@ Note:
 The order of output does not matter.
 The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
 The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
+
+
+416. partition-equal-subset-sum
+Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
+
+Note:
+Each of the array element will not exceed 100.
+The array size will not exceed 200.
+Example 1:
+
+Input: [1, 5, 11, 5]
+
+Output: true
+
+Explanation: The array can be partitioned as [1, 5, 5] and [11].
+Example 2:
+
+Input: [1, 2, 3, 5]
+
+Output: false
+
+Explanation: The array cannot be partitioned into equal sum subsets.
 
 
 434. number-of-segments-in-a-string
@@ -1237,6 +1331,16 @@ You may use one character in the keyboard more than once.
 You may assume the input string will only contain letters of alphabet.
 
 
+501. find-mode-in-binary-search-tree
+Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST.
+
+Assume a BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than or equal to the node's key.
+The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+
 628. maximum-product-of-three-numbers
 Given an integer array, find three numbers whose product is maximum and output the maximum product.
 
@@ -1249,6 +1353,13 @@ Output: 24
 Note:
 The length of the given array will be in range [3,104] and all elements are in the range [-1000, 1000].
 Multiplication of any three numbers in the input won't exceed the range of 32-bit signed integer.
+
+
+623. add-one-row-to-tree
+Given the root of a binary tree, then value v and depth d, you need to add a row of nodes with value v at the given depth d. The root node is at depth 1.
+
+The adding rule is: given a positive integer depth d, for each NOT null tree nodes N in depth d-1, create two tree nodes with value v as N's left subtree root and right subtree root. And N's original left subtree should be the left subtree of the new left subtree root, its original right subtree should be the right subtree of the new right subtree root. If depth d is 1 that means there is no depth d-1 at all, then create a tree node with value v as the new root of the whole original tree, and the original tree is the new root's left subtree.
+
 
 
 671. second-minimum-node-in-a-binary-tree
@@ -1374,4 +1485,9 @@ Follow up:
 
 Can you solve it in O(N) time and O(1) space?
 
+
+863. all-nodes-distance-k-in-binary-tree
+We are given a binary tree (with root node root), a target node, and an integer value K.
+
+Return a list of the values of all nodes that have a distance K from the target node.  The answer can be returned in any order.
 
