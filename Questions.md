@@ -141,6 +141,23 @@ Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 """
 
 
+46. permutations
+Given a collection of distinct integers, return all possible permutations.
+
+Example:
+
+Input: [1,2,3]
+Output:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+
+
 48. rotate-image
 You are given an n x n 2D matrix representing an image.
 
@@ -325,6 +342,23 @@ Consider the following matrix:
 Given target = 3, return true.
 
 
+77. combinations
+Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+
+Example:
+
+Input: n = 4, k = 2
+Output:
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+
+
 78. subsets
 Given a set of distinct integers, nums, return all possible subsets.
 
@@ -346,8 +380,20 @@ If nums = [1,2,3], a solution is:
 
 80. remove-duplicates-from-sorted-array-ii
 Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
-
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+
+
+82. remove-duplicates-from-sorted-list-ii
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+
+Example 1:
+
+Input: 1->2->3->3->4->4->5
+Output: 1->2->5
+Example 2:
+
+Input: 1->1->1->2->3
+Output: 2->3
 
 
 88. merge-sorted-array
@@ -606,6 +652,28 @@ minStack.getMin();   --> Returns -3.
 minStack.pop();
 minStack.top();      --> Returns 0.
 minStack.getMin();   --> Returns -2.
+
+
+160. intersection-of-two-linked-lists
+Write a program to find the node at which the intersection of two singly linked lists begins.
+
+
+For example, the following two linked lists:
+
+A:          a1 → a2
+                   ↘
+                     c1 → c2 → c3
+                   ↗            
+B:     b1 → b2 → b3
+begin to intersect at node c1.
+
+
+Notes:
+
+If the two linked lists have no intersection at all, return null.
+The linked lists must retain their original structure after the function returns.
+You may assume there are no cycles anywhere in the entire linked structure.
+Your code should preferably run in O(n) time and use only O(1) memory.
 
 
 165. compare-version-numbers
@@ -1389,6 +1457,17 @@ Output: -1
 Explanation: The smallest value is 2, but there isn't any second smallest value.
 
 
+680. valid-palindrome-ii
+Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
+
+Example 1:
+Input: "aba"
+Output: True
+Example 2:
+Input: "abca"
+Output: True
+Explanation: You could delete the character 'c'.
+
 
 718. maximum-length-of-repeated-subarray
 Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
@@ -1490,4 +1569,50 @@ Can you solve it in O(N) time and O(1) space?
 We are given a binary tree (with root node root), a target node, and an integer value K.
 
 Return a list of the values of all nodes that have a distance K from the target node.  The answer can be returned in any order.
+
+
+865. smallest-subtree-with-all-the-deepest-nodes
+Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
+
+A node is deepest if it has the largest depth possible among any node in the entire tree.
+
+The subtree of a node is that node, plus the set of all descendants of that node.
+
+Return the node with the largest depth such that it contains all the deepest nodes in its subtree.
+
+
+
+866. prime-palindrome
+Find the smallest prime palindrome greater than or equal to N.
+Recall that a number is prime if it's only divisors are 1 and itself, and it is greater than 1. 
+For example, 2,3,5,7,11 and 13 are primes.
+Recall that a number is a palindrome if it reads the same from left to right as it does from right to left. 
+For example, 12321 is a palindrome.
+
+Example 1:
+Input: 6
+Output: 7
+
+Example 2:
+Input: 8
+Output: 11
+
+Example 3:
+Input: 13
+Output: 101
+
+
+867. transpose-matrix
+Given a matrix A, return the transpose of A.
+The transpose of a matrix is the matrix flipped over it's main diagonal, switching the row and column indices of the matrix.
+
+Example 1:
+Input: [[1,2,3],[4,5,6],[7,8,9]]
+Output: [[1,4,7],[2,5,8],[3,6,9]]
+
+Example 2:
+Input: [[1,2,3],[4,5,6]]
+Output: [[1,4],[2,5],[3,6]]
+
+
 
