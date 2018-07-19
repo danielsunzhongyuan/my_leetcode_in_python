@@ -405,12 +405,56 @@ You may assume that nums1 has enough space (size that is greater or equal to m +
 """
 
 
+94. binary-tree-inorder-traversal
+Given a binary tree, return the inorder traversal of its nodes' values.
+
+Example:
+
+Input: [1,null,2,3]
+   1
+    \
+     2
+    /
+   3
+
+Output: [1,3,2]
+Follow up: Recursive solution is trivial, could you do it iteratively?
+
+
+98. validate-binary-search-tree
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+
 100. same-tree
 """
 Given two binary trees, write a function to check if they are equal or not.
 
 Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
 """
+
+
+101. symmetric-tree
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+
+For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
+
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+But the following [1,2,2,null,3,null,3] is not:
+    1
+   / \
+  2   2
+   \   \
+   3    3
 
 
 102. binary-tree-level-order-traversal
@@ -525,6 +569,59 @@ Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
 
+112. path-sum
+Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Given the below binary tree and sum = 22,
+
+      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \      \
+7    2      1
+return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
+
+
+116. populating-next-right-pointers-in-each-node
+Given the following perfect binary tree,
+
+     1
+   /  \
+  2    3
+ / \  / \
+4  5  6  7
+After calling your function, the tree should look like:
+
+     1 -> NULL
+   /  \
+  2 -> 3 -> NULL
+ / \  / \
+4->5->6->7 -> NULL
+
+
+117. populating-next-right-pointers-in-each-node-ii
+Given the following binary tree,
+
+     1
+   /  \
+  2    3
+ / \    \
+4   5    7
+After calling your function, the tree should look like:
+
+     1 -> NULL
+   /  \
+  2 -> 3 -> NULL
+ / \    \
+4-> 5 -> 7 -> NULL
+
+
 118. pascals-triangle
 Given numRows, generate the first numRows of Pascal's triangle.
 
@@ -609,6 +706,22 @@ Given 1->2->3->4, reorder it to 1->4->2->3.
 Example 2:
 
 Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
+
+
+145. binary-tree-postorder-traversal
+Given a binary tree, return the postorder traversal of its nodes' values.
+
+Example:
+
+Input: [1,null,2,3]
+   1
+    \
+     2
+    /
+   3
+
+Output: [3,2,1]
+Follow up: Recursive solution is trivial, could you do it iteratively?
 
 
 151. reverse-words-in-a-string
@@ -714,6 +827,14 @@ You may assume that the array is non-empty and the majority element always exist
 172. factorial-trailing-zeroes
 Given an integer n, return the number of trailing zeroes in n!.
 Note: Your solution should be in logarithmic time complexity.
+
+
+173. binary-search-tree-iterator
+Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+
+Calling next() will return the next smallest number in the BST.
+
+Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
 
 
 174. dungeon-game
@@ -1090,6 +1211,25 @@ For example, if there are 4 stones in the heap, then you will never win the game
 """
 
 
+297. serialize-and-deserialize-binary-tree
+Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
+
+Example: 
+
+You may serialize the following tree:
+
+    1
+   / \
+  2   3
+     / \
+    4   5
+
+as "[1,2,3,null,null,4,5]"
+
+
+
 300. longest-increasing-subsequence
 Given an unsorted array of integers, find the length of longest increasing subsequence.
 
@@ -1280,6 +1420,10 @@ Output: false
 Explanation: The array cannot be partitioned into equal sum subsets.
 
 
+429. n-ary-tree-level-order-traversal
+Given an n-ary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+
+
 434. number-of-segments-in-a-string
 Count the number of segments in a string, where a segment is defined to be a contiguous sequence of non-space characters.
 
@@ -1409,6 +1553,22 @@ The right subtree of a node contains only nodes with keys greater than or equal 
 Both the left and right subtrees must also be binary search trees.
 
 
+559. maximum-depth-of-n-ary-tree
+Given a n-ary tree, find its maximum depth.
+
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+
+589. n-ary-tree-preorder-traversal
+Given an n-ary tree, return the preorder traversal of its nodes' values.
+ 
+Note: Recursive solution is trivial, could you do it iteratively?
+
+
+590. n-ary-tree-postorder-traversal
+Given an n-ary tree, return the postorder traversal of its nodes' values.
+
+
 628. maximum-product-of-three-numbers
 Given an integer array, find three numbers whose product is maximum and output the maximum product.
 
@@ -1467,6 +1627,61 @@ Example 2:
 Input: "abca"
 Output: True
 Explanation: You could delete the character 'c'.
+
+
+700. search-in-a-binary-search-tree
+Given the root node of a binary search tree (BST) and a value. You need to find the node in the BST that the node's value equals the given value. Return the subtree rooted with that node. If such node doesn't exist, you should return NULL.
+
+For example, 
+
+Given the tree:
+        4
+       / \
+      2   7
+     / \
+    1   3
+
+And the value to search: 2
+You should return this subtree:
+
+      2     
+     / \   
+    1   3
+In the example above, if we want to search the value 5, since there is no node with value 5, we should return NULL.
+
+Note that an empty tree is represented by NULL, therefore you would see the expected output (serialized tree format) as [], not null.
+
+
+701. insert-into-a-binary-search-tree
+Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
+
+Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion. You can return any of them.
+
+For example, 
+
+Given the tree:
+        4
+       / \
+      2   7
+     / \
+    1   3
+And the value to insert: 5
+You can return this binary search tree:
+
+         4
+       /   \
+      2     7
+     / \   /
+    1   3 5
+This tree is also valid:
+
+         5
+       /   \
+      2     7
+     / \   
+    1   3
+         \
+          4
 
 
 718. maximum-length-of-repeated-subarray
