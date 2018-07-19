@@ -25,3 +25,22 @@ class Solution:
             else:
                 tmp = tmp.next
         return head
+
+    def removeElements2(self, head, val):
+        """
+        :type head: ListNode
+        :type val: int
+        :rtype: ListNode
+        """
+        if not head:
+            return head
+        if head.val == val:
+            return self.removeElements(head.next, val)
+        pre, runner = head, head
+        while runner:
+            if runner.val == val:
+                pre.next = runner.next
+            else:
+                pre = runner
+            runner = runner.next
+        return head

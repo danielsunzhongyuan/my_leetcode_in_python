@@ -11,6 +11,18 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1]
 
 
+2. add-two-numbers
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+Example
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+
+
 3. longest-substring-without-repeating-characters
 Given a string, find the length of the longest substring without repeating characters.
 
@@ -78,6 +90,19 @@ Given an array S of n integers, find three integers in S such that the sum is cl
 
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 """
+
+
+19. remove-nth-node-from-end-of-list
+Given a linked list, remove the n-th node from the end of list and return its head.
+
+Example:
+
+Given linked list: 1->2->3->4->5, and n = 2.
+
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+Note:
+
+Given n will always be valid.
 
 
 20. valid-parentheses
@@ -683,15 +708,12 @@ Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? 
 
 
-144. binary-tree-preorder-traversal
-"""
-Given a binary tree, return the preorder traversal of its nodes' values.
+141. linked-list-cycle
+Given a linked list, determine if it has a cycle in it.
 
-For example:
-Given binary tree {1,#,2,3}, return [1, 2, 3]
 
-Note: Recursive solution is trivial, could you do it iteratively?
-"""
+142. linked-list-cycle-ii
+Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
 
 
 143. reorder-list
@@ -706,6 +728,17 @@ Given 1->2->3->4, reorder it to 1->4->2->3.
 Example 2:
 
 Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
+
+
+144. binary-tree-preorder-traversal
+"""
+Given a binary tree, return the preorder traversal of its nodes' values.
+
+For example:
+Given binary tree {1,#,2,3}, return [1, 2, 3]
+
+Note: Recursive solution is trivial, could you do it iteratively?
+"""
 
 
 145. binary-tree-postorder-traversal
@@ -974,6 +1007,13 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
 Count the number of prime numbers less than a non-negative number, n.
 
 
+206. reverse-linked-list
+Reverse a singly linked list.
+Example:
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+
+
 209. minimum-size-subarray-sum
 Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
 Example: 
@@ -1076,6 +1116,19 @@ c. from B to E, take C as an example:
     if C > 1, then result += AB99 + 1
     if C = 1, then result += ABDE + 1
     if C = 0, then result += (AB-1)DE + 1
+
+
+234. palindrome-linked-list
+Given a singly linked list, determine if it is a palindrome.
+
+Example 1:
+
+Input: 1->2
+Output: false
+Example 2:
+
+Input: 1->2->2->1
+Output: true
 
 
 235. lowest-common-ancestor-of-a-binary-search-tree
@@ -1271,6 +1324,21 @@ Note:
 
 326. power-of-three
 Given an integer, write a function to determine if it is a power of three.
+
+
+328. odd-even-linked-list
+Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
+
+You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
+
+Example 1:
+
+Input: 1->2->3->4->5->NULL
+Output: 1->3->5->2->4->NULL
+Example 2:
+
+Input: 2->1->3->5->6->4->7->NULL
+Output: 2->3->6->7->1->5->4->NULL
 
 
 334. increasing-triplet-subsequence
@@ -1682,6 +1750,18 @@ This tree is also valid:
     1   3
          \
           4
+
+
+707. design-linked-list
+Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list. A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node. If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.
+
+Implement these functions in your linked list class:
+
+get(index) : Get the value of the index-th node in the linked list. If the index is invalid, return -1.
+addAtHead(val) : Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+addAtTail(val) : Append a node of value val to the last element of the linked list.
+addAtIndex(index, val) : Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
+deleteAtIndex(index) : Delete the index-th node in the linked list, if the index is valid.
 
 
 718. maximum-length-of-repeated-subarray
