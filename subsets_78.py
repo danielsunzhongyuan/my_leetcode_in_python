@@ -22,3 +22,21 @@ class Solution(object):
             return
         self.dfs(nums, position+1, path + [nums[position]], ans)
         self.dfs(nums, position+1, path, ans)
+
+	def subsets2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        if not nums:
+            return []
+        res = []
+        self.backtrack(res, [], nums, 0)
+        return res
+    
+    def backtrack(self, res, path, nums, index):
+        res.append([x for x in path])
+        for i in range(index, len(nums)):
+            path.append(nums[i])
+            self.backtrack(res, path, nums, i+1)
+            path.pop()
