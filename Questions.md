@@ -727,6 +727,31 @@ Return:
 ]
 
 
+114. flatten-binary-tree-to-linked-list
+Given a binary tree, flatten it to a linked list in-place.
+
+For example, given the following tree:
+
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
+The flattened tree should look like:
+
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+
+
 116. populating-next-right-pointers-in-each-node
 Given the following perfect binary tree,
 
@@ -862,6 +887,42 @@ Example 3:
 Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
+
+
+129. sum-root-to-leaf-numbers
+Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.
+
+An example is the root-to-leaf path 1->2->3 which represents the number 123.
+
+Find the total sum of all root-to-leaf numbers.
+
+Note: A leaf is a node with no children.
+
+Example:
+
+Input: [1,2,3]
+    1
+   / \
+  2   3
+Output: 25
+Explanation:
+The root-to-leaf path 1->2 represents the number 12.
+The root-to-leaf path 1->3 represents the number 13.
+Therefore, sum = 12 + 13 = 25.
+Example 2:
+
+Input: [4,9,0,5,1]
+    4
+   / \
+  9   0
+ / \
+5   1
+Output: 1026
+Explanation:
+The root-to-leaf path 4->9->5 represents the number 495.
+The root-to-leaf path 4->9->1 represents the number 491.
+The root-to-leaf path 4->0 represents the number 40.
+Therefore, sum = 495 + 491 + 40 = 1026.
 
 
 131. palindrome-partitioning
@@ -1185,6 +1246,22 @@ Given a Weather table, write a SQL query to find all dates' Ids with higher temp
 """
 
 
+199. binary-tree-right-side-view
+Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+Example:
+
+Input: [1,2,3,null,5,null,4]
+Output: [1, 3, 4]
+Explanation:
+
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+
+
 202. happy-number
 Write an algorithm to determine if a number is "happy".
 
@@ -1302,6 +1379,29 @@ Explanation: 2,3,4 form a continuous range; 8,9 form a continuous range.
 
 231. power-of-two
 Given an integer, write a function to determine if it is a power of two.
+
+
+232. implement-queue-using-stacks
+Implement the following operations of a queue using stacks.
+
+push(x) -- Push element x to the back of queue.
+pop() -- Removes the element from in front of queue.
+peek() -- Get the front element.
+empty() -- Return whether the queue is empty.
+Example:
+
+MyQueue queue = new MyQueue();
+
+queue.push(1);
+queue.push(2);  
+queue.peek();  // returns 1
+queue.pop();   // returns 1
+queue.empty(); // returns false
+Notes:
+
+You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
+You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
 
 
 233. number-of-digit-one
@@ -1695,6 +1795,23 @@ Explanation: The array cannot be partitioned into equal sum subsets.
 Given an n-ary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 
+430. flatten-a-multilevel-doubly-linked-list 
+You are given a doubly linked list which in addition to the next and previous pointers, it could have a child pointer, which may or may not point to a separate doubly linked list. These child lists may have one or more children of their own, and so on, to produce a multilevel data structure, as shown in the example below.
+
+Flatten the list so that all the nodes appear in a single-level, doubly linked list. You are given the head of the first level of the list.
+
+Example:
+Input:
+ 1---2---3---4---5---6--NULL
+         |
+         7---8---9---10--NULL
+             |
+             11--12--NULL
+
+Output:
+1-2-3-7-8-11-12-9-10-4-5-6-NULL
+
+
 434. number-of-segments-in-a-string
 Count the number of segments in a string, where a segment is defined to be a contiguous sequence of non-space characters.
 
@@ -1888,6 +2005,57 @@ Given the root of a binary tree, then value v and depth d, you need to add a row
 The adding rule is: given a positive integer depth d, for each NOT null tree nodes N in depth d-1, create two tree nodes with value v as N's left subtree root and right subtree root. And N's original left subtree should be the left subtree of the new left subtree root, its original right subtree should be the right subtree of the new right subtree root. If depth d is 1 that means there is no depth d-1 at all, then create a tree node with value v as the new root of the whole original tree, and the original tree is the new root's left subtree.
 
 
+662. maximum-width-of-binary-tree
+Given a binary tree, write a function to get the maximum width of the given tree. The width of a tree is the maximum width among all levels. The binary tree has the same structure as a full binary tree, but some nodes are null.
+
+The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the null nodes between the end-nodes are also counted into the length calculation.
+
+Example 1:
+Input: 
+
+           1
+         /   \
+        3     2
+       / \     \  
+      5   3     9 
+
+Output: 4
+Explanation: The maximum width existing in the third level with the length 4 (5,3,null,9).
+Example 2:
+Input: 
+
+          1
+         /  
+        3    
+       / \       
+      5   3     
+
+Output: 2
+Explanation: The maximum width existing in the third level with the length 2 (5,3).
+Example 3:
+Input: 
+
+          1
+         / \
+        3   2 
+       /        
+      5      
+
+Output: 2
+Explanation: The maximum width existing in the second level with the length 2 (3,2).
+Example 4:
+Input: 
+
+          1
+         / \
+        3   2
+       /     \  
+      5       9 
+     /         \
+    6           7
+Output: 8
+Explanation:The maximum width existing in the fourth level with the length 8 (6,null,null,null,null,null,null,7).
+
 
 671. second-minimum-node-in-a-binary-tree
 Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node's value is the smaller value among its two sub-nodes.
@@ -2056,6 +2224,31 @@ Note:
 
 N will be an integer in the range [1, 30].
 K will be an integer in the range [1, 2^(N-1)].
+
+
+814. binary-tree-pruning
+We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1.
+Return the same tree where every subtree (of the given tree) not containing a 1 has been removed.
+(Recall that the subtree of a node X is X, plus every node that is a descendant of X.)
+
+Example 1:
+Input: [1,null,0,0,1]
+Output: [1,null,0,null,1]
+ 
+Explanation: 
+Only the red nodes satisfy the property "every subtree not containing a 1". The diagram on the right represents the answer.
+
+Example 2:
+Input: [1,0,1,0,0,0,1]
+Output: [1,null,1,null,1]
+
+Example 3:
+Input: [1,1,0,1,1,0,1,0]
+Output: [1,1,0,1,1,null,1]
+
+Note:
+The binary tree will have at most 100 nodes.
+The value of each node will only be 0 or 1.
 
 
 844. backspace-string-compare
