@@ -6,4 +6,4 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         import itertools
-        return list(itertools.combinations([i for i in range(1, n+1)], k))
+        return list(itertools.combinations([i for i in range(1, n + 1)], k))

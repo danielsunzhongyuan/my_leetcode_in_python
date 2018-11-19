@@ -61,7 +61,7 @@ class Solution3(object):
         lastIndex = length - 1
         while lastIndex:
             tmp = lastIndex
-            for i, num in enumerate(nums[lastIndex-1::-1]):
+            for i, num in enumerate(nums[lastIndex - 1::-1]):
                 if num > i:
                     tmp = lastIndex - 1 - i
             if tmp == lastIndex:
@@ -69,7 +69,6 @@ class Solution3(object):
             else:
                 lastIndex = tmp
         return True
-
 
 
 class Solution4(object):

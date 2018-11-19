@@ -17,6 +17,8 @@ kthLargest.add(4);   // returns 8
 Note: 
 You may assume that nums' length ≥ k-1 and k ≥ 1.
 """
+
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -24,8 +26,8 @@ class TreeNode(object):
         self.right = None
         self.cnt = 1
 
-class KthLargest(object):
 
+class KthLargest(object):
     def __init__(self, k, nums):
         """
         :type k: int
@@ -63,29 +65,30 @@ class KthLargest(object):
             else:
                 pre.right = TreeNode(val)
         return self.findKthLargest(self.root, self.k)
-    
+
     def findKthLargest(self, node, kth):
         if kth == 1 and not node.right:
             return node.val
         if node.cnt < kth:
             return -1
-        
+
         if node.right:
             if node.right.cnt >= kth:
                 return self.findKthLargest(node.right, kth)
             elif node.right.cnt == kth - 1:
                 return node.val
             else:
-                return self.findKthLargest(node.left, kth-node.right.cnt-1)
+                return self.findKthLargest(node.left, kth - node.right.cnt - 1)
         else:
-            return self.findKthLargest(node.left, kth-1)
+            return self.findKthLargest(node.left, kth - 1)
+
 
 # Your KthLargest object will be instantiated and called as such:
 # obj = KthLargest(k, nums)
 # param_1 = obj.add(val)
 
 if __name__ == "__main__":
-    a = KthLargest(3, [4,5,8,2])
+    a = KthLargest(3, [4, 5, 8, 2])
     print a.add(3)
     print a.add(5)
     print a.add(10)
@@ -98,4 +101,3 @@ if __name__ == "__main__":
     print b.add(-4)
     print b.add(0)
     print b.add(4)
-

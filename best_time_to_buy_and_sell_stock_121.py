@@ -15,4 +15,3 @@ class Solution(object):
             else:
                 minimum_price = prices[i]
         return ret
-

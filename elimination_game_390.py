@@ -1,7 +1,9 @@
 """
-There is a list of sorted integers from 1 to n. Starting from left to right, remove the first number and every other number afterward until you reach the end of the list.
+There is a list of sorted integers from 1 to n. Starting from left to right, 
+remove the first number and every other number afterward until you reach the end of the list.
 
-Repeat the previous step again, but this time from right to left, remove the right most number and every other number from the remaining numbers.
+Repeat the previous step again, but this time from right to left, 
+remove the right most number and every other number from the remaining numbers.
 
 We keep repeating the steps again, alternating left to right and right to left, until a single number remains.
 
@@ -21,6 +23,7 @@ Output:
 
 """
 
+
 class SolutionLTE(object):
     def lastRemaining(self, n):
         """
@@ -29,7 +32,7 @@ class SolutionLTE(object):
         """
         if n < 1:
             return 0
-        numbers = range(1, n+1)
+        numbers = range(1, n + 1)
         while len(numbers) > 1:
             numbers = numbers[1::2]
             if len(numbers) == 1:
@@ -70,4 +73,3 @@ if __name__ == "__main__":
     print a.lastRemaining(31)
     print a.lastRemaining(32)
     print a.lastRemaining(34)
-

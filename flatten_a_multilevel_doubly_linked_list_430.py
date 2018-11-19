@@ -7,6 +7,8 @@ class Node(object):
         self.next = next
         self.child = child
 """
+
+
 class Solution(object):
     def flatten(self, head):
         """
@@ -22,13 +24,13 @@ class Solution(object):
         res[0].prev = res[0].child = None
         res[0].next = res[1]
         for i in range(1, len(res) - 1):
-            res[i].next = res[i+1]
-            res[i].prev = res[i-1]
+            res[i].next = res[i + 1]
+            res[i].prev = res[i - 1]
             res[i].child = None
         res[-1].prev = res[-2]
         res[-1].next = res[-1].child = None
         return res[0]
-        
+
     def traverse(self, res, node):
         if not node:
             return

@@ -15,6 +15,8 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 """
 
 import string
+
+
 class Solution(object):
     def decodeString(self, s):
         """
@@ -49,16 +51,15 @@ class Solution(object):
                     tmp = stack.pop() + tmp
                 stack.pop()
                 x = stack.pop()
-                stack.append(tmp*x)
+                stack.append(tmp * x)
                 i += 1
         while stack:
             res = stack.pop() + res
         return res
-                
+
 
 if __name__ == "__main__":
     a = Solution()
     print a.decodeString("3[a]2[bc]")
     print a.decodeString("3[a2[c]]")
     print a.decodeString("2[abc]3[cd]ef")
-

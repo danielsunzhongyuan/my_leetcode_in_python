@@ -7,8 +7,6 @@ from Orders
 ;
 
 
-
-
 select c.Name
 from Customers c
 left join Orders o on c.Id = o.CustomerId

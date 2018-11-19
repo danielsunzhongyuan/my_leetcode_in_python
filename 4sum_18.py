@@ -51,7 +51,7 @@ class Solution(object):
         #     if remain == 0 and paths not in res:
         #         res.append(paths[:])
         #     return
-        if nums[-1]*(4-len(paths)) < remain or (start < length and nums[start]*(4-len(paths)) >remain):
+        if nums[-1]*(4-len(paths)) < remain or (start < length and nums[start]*(4-len(paths)) > remain):
             return
         for i in range(start, length):
             if nums[-1]*(3-len(paths)) + nums[i] < remain:

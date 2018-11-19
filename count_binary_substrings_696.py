@@ -24,7 +24,7 @@ class Solution(object):
         #             stack2 = [c]
         # count += min(len(stack1), len(stack2))
         # return count
-        
+
         # Solution Two: remove stack, only remain the length of stack1 and stack2.
         # also, the pre character, i.e. stack2[-1]
         if "" == s:

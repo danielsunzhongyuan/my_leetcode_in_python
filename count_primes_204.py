@@ -21,4 +21,4 @@ class Solution(object):
                     a[tmp] = False
                     tmp += i
         return sum(a)
-        #return a.count(True)
+        # return a.count(True)

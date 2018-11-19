@@ -5,22 +5,23 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
-#     def postorderTraversal(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: List[int]
-#         """
-#         ret = []
-#         self.postorderTraversalRecursion(root, ret)
-#         return ret
-    
-#     def postorderTraversalRecursion(self, node, arr):
-#         if node == None:
-#             return
-#         self.postorderTraversalRecursion(node.left, arr)
-#         self.postorderTraversalRecursion(node.right, arr)
-#         arr.append(node.val)
+    # def postorderTraversal(self, root):
+    #     """
+    #     :type root: TreeNode
+    #     :rtype: List[int]
+    #     """
+    #     ret = []
+    #     self.postorderTraversalRecursion(root, ret)
+    #     return ret
+    #
+    # def postorderTraversalRecursion(self, node, arr):
+    #     if node == None:
+    #         return
+    #     self.postorderTraversalRecursion(node.left, arr)
+    #     self.postorderTraversalRecursion(node.right, arr)
+    #     arr.append(node.val)
     def postorderTraversal(self, root):
         res = []
         if not root:

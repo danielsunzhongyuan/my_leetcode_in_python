@@ -31,18 +31,18 @@ class Solution(object):
         #     self.invertTree(root.left)
         #     self.invertTree(root.right)
         # return root
-        
+
         # Solution Two
         # if root != None:
         #     root.left, root.right = root.right, root.left
         #     map(self.invertTree, (root.left, root.right))
         # return root
-        
+
         # Solution Three
         if root != None:
             root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
         return root
-        
+
         # Solution Four
         # queue = collections.deque([(root)])
         # while queue:
@@ -52,7 +52,7 @@ class Solution(object):
         #         queue.append(node.left)
         #         queue.append(node.right)
         # return root
-        
+
         # Solution Five
         # stack = [root]
         # while stack:

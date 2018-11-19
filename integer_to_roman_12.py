@@ -13,7 +13,7 @@ class Solution(object):
         ]
         i = 0
         while num:
-            res = digits_mapping[i][num%10] + res
+            res = digits_mapping[i][num % 10] + res
             i += 1
             num /= 10
         return res

@@ -1,6 +1,7 @@
 # author: Zhongyuan Sun
 # Storing the loop numbers will help improving performance from 0.63% to 93.93%
 
+
 class Solution(object):
     def isHappy(self, n):
         """
@@ -22,14 +23,14 @@ class Solution(object):
                         80, 81, 83, 84, 85, 87, 88, 89,
                         90, 92, 93, 95, 96, 98, 99,
                         106, 113, 117, 128, 145, 162]
-        while (x != 1 and x not in loop_numbers):
+        while x != 1 and x not in loop_numbers:
             x = self.cal(x)
         return x == 1
 
     def cal(self, n):
         res = 0
         while n:
-            res += (n%10)**2
+            res += (n % 10) ** 2
             n /= 10
         return res
         # return sum([int(c)**2 for c in str(n)])

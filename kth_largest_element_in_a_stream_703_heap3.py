@@ -1,5 +1,4 @@
 class KthLargest(object):
-
     def __init__(self, k, nums):
         self.pool = nums
         self.k = k

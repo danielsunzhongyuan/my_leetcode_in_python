@@ -1,5 +1,6 @@
 """
-Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. 
+Return the root node reference (possibly updated) of the BST.
 
 Basically, the deletion can be divided into two stages:
 
@@ -37,6 +38,7 @@ Another valid answer is [5,2,6,null,4,null,7].
     4   7
 """
 
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -51,38 +53,38 @@ class Solution(object):
         :type key: int
         :rtype: TreeNode
         """
-#         target, pre = self.searchBST(root, None, key)
-#         if not target:
-#             return root
-#         if not pre:
-#             return self.adjustTree(target)
-#         if pre.left == target:
-#             pre.left = self.adjustTree(target)
-#         elif pre.right == target:
-#             pre.right = self.adjustTree(target)
-#         return root
-        
-#     def searchBST(self, root, pre, val):
-#         if not root:
-#             return None, pre
-#         if root.val == val:
-#             return root, pre
-#         if root.val > val:
-#             return self.searchBST(root.left, root, val)
-#         return self.searchBST(root.right, root, val)
-    
-#     def adjustTree(self, node):
-#         if not node.left:
-#             return node.right
-#         if not node.right:
-#             return node.left
-        
-#         new_root = node.left
-#         cur = new_root
-#         while cur.right:
-#             cur = cur.right
-#         cur.right = node.right
-#         return new_root
+        #     target, pre = self.searchBST(root, None, key)
+        #     if not target:
+        #         return root
+        #     if not pre:
+        #         return self.adjustTree(target)
+        #     if pre.left == target:
+        #         pre.left = self.adjustTree(target)
+        #     elif pre.right == target:
+        #         pre.right = self.adjustTree(target)
+        #     return root
+        #
+        # def searchBST(self, root, pre, val):
+        #     if not root:
+        #         return None, pre
+        #     if root.val == val:
+        #         return root, pre
+        #     if root.val > val:
+        #         return self.searchBST(root.left, root, val)
+        #     return self.searchBST(root.right, root, val)
+        #
+        # def adjustTree(self, node):
+        #     if not node.left:
+        #         return node.right
+        #     if not node.right:
+        #         return node.left
+        #
+        #     new_root = node.left
+        #     cur = new_root
+        #     while cur.right:
+        #         cur = cur.right
+        #     cur.right = node.right
+        #     return new_root
 
         if root == None:
             return None
@@ -91,18 +93,16 @@ class Solution(object):
                 return root.right
             if root.right == None:
                 return root.left
-            
             node = self.nextNode(root)
             root.val = node.val
-            root.right = self.deleteNode(root.right , root.val)
-            
+            root.right = self.deleteNode(root.right, root.val)
+
         elif key < root.val:
-            root.left = self.deleteNode(root.left , key)
+            root.left = self.deleteNode(root.left, key)
         else:
-            root.right = self.deleteNode(root.right , key)
+            root.right = self.deleteNode(root.right, key)
         return root
-        
-        
+
     def nextNode(self, node):
         curr = node.right
         while curr != None and curr.left != None:

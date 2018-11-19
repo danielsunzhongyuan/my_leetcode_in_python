@@ -11,6 +11,7 @@ Input: [0,1]
 Output: 0
 """
 
+
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         """
@@ -23,11 +24,11 @@ class Solution(object):
         # while ans>m:
         #     ans=ans&(ans-1)
         # return ans
-        
+
         # Solution Two
         count = 0
-        while m<n:
+        while m < n:
             m >>= 1
             n >>= 1
             count += 1
-        return m<<count
+        return m << count

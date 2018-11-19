@@ -22,13 +22,13 @@ class Solution(object):
         idx = bisect.bisect_right(letters, target)
         return letters[idx % len(letters)]
 
+
 def main():
-	s = Solution()
-	letters = ['c', 'f', 'j']
-	target = 'z'
-	print s.nextGreatestLetter(letters, target)
+    s = Solution()
+    letters = ['c', 'f', 'j']
+    target = 'z'
+    print s.nextGreatestLetter(letters, target)
 
 
 if __name__ == "__main__":
-	main()
-
+    main()

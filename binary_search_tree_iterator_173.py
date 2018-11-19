@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class BSTIterator(object):
     def __init__(self, root):
         """

@@ -8,6 +8,8 @@
 # Solution Three: based on solution two, instead of using itertools.product(("0","1")...) to generate the permutations,
 #               use numbers [0, 2**10) to represent the permutation
 # Solution Four: get all possible time and output them if count of digit 1 is "num"
+import itertools
+
 
 class Solution(object):
     def readBinaryWatch(self, num):

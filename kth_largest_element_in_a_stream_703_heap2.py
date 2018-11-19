@@ -18,4 +18,3 @@ class KthLargest(object):
                 self.heap[0] = val
                 self.heap.sort()
         return self.heap[0]
-

@@ -24,6 +24,7 @@ The length of nums will be in the range [0, 10000].
 Each element nums[i] will be an integer in the range [-1000, 1000].
 """
 
+
 class Solution(object):
     def pivotIndex(self, nums):
         """
@@ -37,4 +38,3 @@ class Solution(object):
                 return i
             left += num
         return -1
-

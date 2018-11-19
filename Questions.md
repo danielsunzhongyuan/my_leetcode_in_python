@@ -1,11 +1,3 @@
-
-
-11. container-with-most-water
-Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
-
-Note: You may not slant the container and n is at least 2.
-
-
 12. integer-to-roman
 Given an integer, convert it to a roman numeral.
 
@@ -64,88 +56,6 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
 Example:
 Given input array nums = [3,2,2,3], val = 3
 Your function should return length = 2, with the first two elements of nums being 2.
-
-
-38. count-and-say
-The count-and-say sequence is the sequence of integers with the first five terms as following:
-
-1.     1
-2.     11
-3.     21
-4.     1211
-5.     111221
-1 is read off as "one 1" or 11.
-11 is read off as "two 1s" or 21.
-21 is read off as "one 2, then one 1" or 1211.
-Given an integer n, generate the nth term of the count-and-say sequence.
-
-Note: Each term of the sequence of integers will be represented as a string.
-
-Example 1:
-
-Input: 1
-Output: "1"
-Example 2:
-
-Input: 4
-Output: "1211"
-
-
-39. combination-sum
-Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
-
-The same repeated number may be chosen from candidates unlimited number of times.
-
-Note:
-
-All numbers (including target) will be positive integers.
-The solution set must not contain duplicate combinations.
-Example 1:
-
-Input: candidates = [2,3,6,7], target = 7,
-A solution set is:
-[
-  [7],
-  [2,2,3]
-]
-Example 2:
-
-Input: candidates = [2,3,5], target = 8,
-A solution set is:
-[
-  [2,2,2,2],
-  [2,3,3],
-  [3,5]
-]
-
-
-40. combination-sum-ii
-Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
-
-Each number in candidates may only be used once in the combination.
-
-Note:
-
-All numbers (including target) will be positive integers.
-The solution set must not contain duplicate combinations.
-Example 1:
-
-Input: candidates = [10,1,2,7,6,1,5], target = 8,
-A solution set is:
-[
-  [1, 7],
-  [1, 2, 5],
-  [2, 6],
-  [1, 1, 6]
-]
-Example 2:
-
-Input: candidates = [2,5,2,1,2], target = 5,
-A solution set is:
-[
-  [1,2,2],
-  [5]
-]
 
 
 42. trapping-rain-water
@@ -506,110 +416,12 @@ But the following [1,2,2,null,3,null,3] is not:
    3    3
 
 
-102. binary-tree-level-order-traversal
-Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
-
-For example:
-Given binary tree [3,9,20,null,null,15,7],
-    3
-   / \
-  9  20
-    /  \
-   15   7
-return its level order traversal as:
-[
-  [3],
-  [9,20],
-  [15,7]
-]
-
-
-103. binary-tree-zigzag-level-order-traversal
-"""
-Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
-
-For example:
-Given binary tree {3,9,20,#,#,15,7},
-
-    3
-   / \
-  9  20
-    /  \
-   15   7
-
-return its zigzag level order traversal as:
-
-[
-    [3],
-    [20,9],
-    [15,7]
-]
-"""
-
-
 104. maximum-depth-of-binary-tree
 """
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 """
-
-
-105. construct-binary-tree-from-preorder-and-inorder-traversal
-Given preorder and inorder traversal of a tree, construct the binary tree.
-
-Note:
-You may assume that duplicates do not exist in the tree.
-
-For example, given
-
-preorder = [3,9,20,15,7]
-inorder = [9,3,15,20,7]
-Return the following binary tree:
-
-    3
-   / \
-  9  20
-    /  \
-   15   7
-
-
-106. construct-binary-tree-from-inorder-and-postorder-traversal
-Given inorder and postorder traversal of a tree, construct the binary tree.
-
-Note:
-You may assume that duplicates do not exist in the tree.
-
-For example, given
-
-inorder = [9,3,15,20,7]
-postorder = [9,15,7,20,3]
-Return the following binary tree:
-
-    3
-   / \
-  9  20
-    /  \
-   15   7
-
-
-
-107. binary-tree-level-order-traversal-ii
-Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
-
-For example:
-Given binary tree [3,9,20,null,null,15,7],
-    3
-   / \
-  9  20
-    /  \
-   15   7
-return its bottom-up level order traversal as:
-[
-  [15,7],
-  [9,20],
-  [3]
-]
 
 
 111. minimum-depth-of-binary-tree
@@ -874,31 +686,6 @@ Output:
 ]
 
 
-135. candy
-"""
-There are N children standing in a line. Each child is assigned a rating value.
-
-You are giving candies to these children subjected to the following requirements:
-
-Each child must have at least one candy.
-Children with a higher rating get more candies than their neighbors.
-What is the minimum candies you must give?
-"""
-1. Since the question doesn't define the behavior that whether children should get the same candies if their rating equals with their neighbors, there would be different results for different behaviors.
-
-For example,
-the rating of children is:
-[1, 1, 1, 2, 2, 3, 4, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 3, 2, 1, 1]
-
-then their candies would be:
-[1, 1, 1, 2, 2, 3, 4, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 3, 2, 1, 1]
-or
-[1, 1, 1, 2, 1, 2, 3, 4, 1, 8, 7, 6, 5, 4, 3, 2, 1, 3, 2, 1, 1]
-
-
-2. It doesn't matter to scan the ratings from left to right firstly or from right to left firstly.
-
-
 136. single-number
 Given an array of integers, every element appears twice except for one. Find that single one.
 
@@ -999,20 +786,6 @@ Update (2015-02-12):
 For C programmers: Try to solve it in-place in O(1) space.
 
 
-153. find-minimum-in-rotated-sorted-array
-Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
-(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
-Find the minimum element.
-You may assume no duplicate exists in the array.
-
-
-154. find-minimum-in-rotated-sorted-array-ii
-Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
-(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
-Find the minimum element.
-You may assume DUPLICATE exists in the array.
-
-
 155. min-stack
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
@@ -1051,11 +824,6 @@ If the two linked lists have no intersection at all, return null.
 The linked lists must retain their original structure after the function returns.
 You may assume there are no cycles anywhere in the entire linked structure.
 Your code should preferably run in O(n) time and use only O(1) memory.
-
-
-165. compare-version-numbers
-0.1 < 1.1 < 1.2 < 13.37
-0.1 = 0.01.0.0
 
 
 166. fraction-to-recurring-decimal
@@ -1265,22 +1033,6 @@ Write a SQL query to delete all duplicate email entries in a table named Person,
 """
 Given a Weather table, write a SQL query to find all dates' Ids with higher temperature compared to its previous (yesterday's) dates.
 """
-
-
-199. binary-tree-right-side-view
-Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
-
-Example:
-
-Input: [1,2,3,null,5,null,4]
-Output: [1, 3, 4]
-Explanation:
-
-   1            <---
- /   \
-2     3         <---
- \     \
-  5     4       <---
 
 
 202. happy-number
@@ -1558,19 +1310,6 @@ Note:
 You may assume the string contains only lowercase alphabets.
 
 
-257. binary-tree-paths
-Given a binary tree, return all root-to-leaf paths.
-
-For example, given the following binary tree:
-   1
- /   \
-2     3
- \
-  5
-All root-to-leaf paths are:
-["1->2->5", "1->3"]
-
-
 262. trips-and-users
 round(float_number, 2)
 
@@ -1744,22 +1483,6 @@ Example 2:
 Maximum amount of money the thief can rob = 4 + 5 = 9.
 
 
-338. counting-bits
-"""
-Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
-
-Example:
-For num = 5 you should return [0,1,1,2,1,2].
-
-Follow up:
-
-It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass?
-Space complexity should be O(n).
-Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
-"""
-Solution2 is better
-
-
 342. power-of-four
 Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 
@@ -1798,22 +1521,6 @@ What is the maximum number of envelopes can you Russian doll? (put one inside ot
 
 Example:
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]], the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
-
-
-
-389. find-the-difference
-Given two strings s and t which consist of only lowercase letters.
-String t is generated by random shuffling string s and then add one more letter at a random position.
-Find the letter that was added in t.
-
-Example:
-Input:
-s = "abcd"
-t = "abcde"
-Output:
-e
-Explanation:
-'e' is the letter that was added.
 
 
 401. binary-watch
@@ -1914,14 +1621,6 @@ Return 3. The paths that sum to 8 are:
 3. -3 -> 11
 
 
-441. arrangin-coins
-You have a total of n coins that you want to form in a staircase shape, where every k-th row must have exactly k coins.
-
-Given n, find the total number of full staircase rows that can be formed.
-
-n is a non-negative integer and fits within the range of a 32-bit signed integer.
-
-
 451. sort-characters-by-frequency
 Given a string, sort it in decreasing order based on the frequency of characters.
 
@@ -1993,25 +1692,6 @@ The range of n is [3, 10^18].
 The string representing n is always valid and will not have leading zeros.
 
 
-492. construct-the-rectangle
-For a web developer, it is very important to know how to design a web page's size. So, given a specific rectangular web page’s area, your job by now is to design a rectangular web page, whose length L and width W satisfy the following requirements:
-
-1. The area of the rectangular web page you designed must equal to the given target area.
-
-2. The width W should not be larger than the length L, which means L >= W.
-
-3. The difference between length L and width W should be as small as possible.
-You need to output the length L and the width W of the web page you designed in sequence.
-Example:
-Input: 4
-Output: [2, 2]
-Explanation: The target area is 4, and all the possible ways to construct it are [1,4], [2,2], [4,1]. 
-But according to requirement 2, [1,4] is illegal; according to requirement 3,  [4,1] is not optimal compared to [2,2]. So the length L is 2, and the width W is 2.
-Note:
-The given area won't exceed 10,000,000 and is a positive integer
-The web page's width and length you designed must be positive integers.
-
-
 500. keyboard-row
 Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.
 Example:
@@ -2060,12 +1740,6 @@ Output: 24
 Note:
 The length of the given array will be in range [3,104] and all elements are in the range [-1000, 1000].
 Multiplication of any three numbers in the input won't exceed the range of 32-bit signed integer.
-
-
-623. add-one-row-to-tree
-Given the root of a binary tree, then value v and depth d, you need to add a row of nodes with value v at the given depth d. The root node is at depth 1.
-
-The adding rule is: given a positive integer depth d, for each NOT null tree nodes N in depth d-1, create two tree nodes with value v as N's left subtree root and right subtree root. And N's original left subtree should be the left subtree of the new left subtree root, its original right subtree should be the right subtree of the new right subtree root. If depth d is 1 that means there is no depth d-1 at all, then create a tree node with value v as the new root of the whole original tree, and the original tree is the new root's left subtree.
 
 
 662. maximum-width-of-binary-tree
@@ -2287,31 +1961,6 @@ Note:
 
 N will be an integer in the range [1, 30].
 K will be an integer in the range [1, 2^(N-1)].
-
-
-814. binary-tree-pruning
-We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1.
-Return the same tree where every subtree (of the given tree) not containing a 1 has been removed.
-(Recall that the subtree of a node X is X, plus every node that is a descendant of X.)
-
-Example 1:
-Input: [1,null,0,0,1]
-Output: [1,null,0,null,1]
- 
-Explanation: 
-Only the red nodes satisfy the property "every subtree not containing a 1". The diagram on the right represents the answer.
-
-Example 2:
-Input: [1,0,1,0,0,0,1]
-Output: [1,null,1,null,1]
-
-Example 3:
-Input: [1,1,0,1,1,0,1,0]
-Output: [1,1,0,1,1,null,1]
-
-Note:
-The binary tree will have at most 100 nodes.
-The value of each node will only be 0 or 1.
 
 
 844. backspace-string-compare

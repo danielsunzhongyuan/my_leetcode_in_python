@@ -45,7 +45,8 @@ class Solution(object):
             else:
                 e = max(intervals[rightPosition].end, newInterval.end)
                 if newInterval.start > intervals[leftPosition].end:
-                    return intervals[0:leftPosition + 1] + [Interval(newInterval.start, e)] + intervals[rightPosition + 1:]
+                    return intervals[0:leftPosition + 1] + [Interval(newInterval.start, e)] + intervals[
+                                                                                              rightPosition + 1:]
                 else:
                     s = min(intervals[leftPosition].start, newInterval.start)
                     return intervals[0:leftPosition] + [Interval(s, e)] + intervals[rightPosition + 1:]
@@ -94,10 +95,10 @@ class Solution2(object):
         elif newInterval.start <= intervals[leftPosition].end:
             e = max(intervals[rightPosition].end, newInterval.end)
             s = min(intervals[leftPosition].start, newInterval.start)
-            return intervals[0:leftPosition] + [Interval(s, e)] + intervals[rightPosition+1:]
+            return intervals[0:leftPosition] + [Interval(s, e)] + intervals[rightPosition + 1:]
         else:
             e = max(intervals[rightPosition].end, newInterval.end)
-            return intervals[0:leftPosition+1] + [Interval(newInterval.start, e)] + intervals[rightPosition+1:]
+            return intervals[0:leftPosition + 1] + [Interval(newInterval.start, e)] + intervals[rightPosition + 1:]
 
     def findPosition(self, intervals, number):
         start, end = 0, len(intervals) - 1

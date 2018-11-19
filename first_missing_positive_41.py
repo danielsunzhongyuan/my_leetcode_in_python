@@ -17,6 +17,7 @@ Output: 1
 Your algorithm should run in O(n) time and uses constant extra space.
 """
 
+
 class Solution(object):
     def firstMissingPositive(self, nums):
         """
@@ -27,14 +28,14 @@ class Solution(object):
         if length == 0:
             return 1
         for i in range(length):
-            while nums[i]<=length and nums[i]>0 and nums[i]!=i+1 and nums[nums[i]-1] !=nums[i]:
-                tmp = nums[nums[i]-1]
-                nums[nums[i]-1] = nums[i]
+            while 0 < nums[i] <= length and nums[i] != i + 1 and nums[nums[i] - 1] != nums[i]:
+                tmp = nums[nums[i] - 1]
+                nums[nums[i] - 1] = nums[i]
                 nums[i] = tmp
         for i in range(length):
-            if nums[i] != i+1:
-                return i+1
-        return length+1
+            if nums[i] != i + 1:
+                return i + 1
+        return length + 1
 
 
 if __name__ == "__main__":

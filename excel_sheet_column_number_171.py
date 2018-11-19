@@ -10,5 +10,5 @@ class Solution(object):
             return res
         mapping = dict(zip(string.ascii_uppercase, [i for i in range(1, 27)]))
         for c in s:
-            res = res*26 + mapping[c]
+            res = res * 26 + mapping[c]
         return res

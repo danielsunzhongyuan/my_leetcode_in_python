@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def preorderTraversal(self, root):
         """
@@ -18,6 +19,7 @@ class Solution(object):
         result += self.preorderTraversal(root.left)
         result += self.preorderTraversal(root.right)
         return result
+
 
 class Solution2(object):
     def preorderTraversal(self, root):

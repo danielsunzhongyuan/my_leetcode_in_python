@@ -1,6 +1,7 @@
 """
 There are n cities connected by m flights. Each fight starts from city u and arrives at v with a price w.
-Now given all the cities and fights, together with starting city src and the destination dst, your task is to find the cheapest price from src to dst with up to k stops. If there is no such route, output -1.
+Now given all the cities and fights, together with starting city src and the destination dst, 
+your task is to find the cheapest price from src to dst with up to k stops. If there is no such route, output -1.
 
 Note:
 
@@ -13,8 +14,6 @@ There will not be any duplicated flights or self cycles.
 """
 
 
-
-
 class Solution(object):
     def findCheapestPrice(self, n, flights, src, dst, K):
         """
@@ -25,10 +24,10 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        costWithKStops = [10000000]*n
+        costWithKStops = [10000000] * n
         costWithKStops[src] = 0
         preRound = costWithKStops[:]
-        
+
         i = 0
         nextCities = [src]
         while i <= K:
@@ -45,7 +44,7 @@ class Solution(object):
             print preRound
             i += 1
         return costWithKStops[dst] if costWithKStops[dst] < 10000000 else -1
-            
+
     def getDestCityesFromSrc(self, flights, src):
         results = []
         for flight in flights:
@@ -56,4 +55,4 @@ class Solution(object):
 
 if __name__ == "__main__":
     a = Solution()
-    print a.findCheapestPrice(4, [[0,1,1],[0,2,5],[1,2,1],[2,3,1]], 0, 3, 1)
+    print a.findCheapestPrice(4, [[0, 1, 1], [0, 2, 5], [1, 2, 1], [2, 3, 1]], 0, 3, 1)

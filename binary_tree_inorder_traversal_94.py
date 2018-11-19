@@ -5,22 +5,23 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
-#     def inorderTraversal(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: List[int]
-#         """
-#         ret = []
-#         self.inorderTraversalRecursion(root, ret)
-#         return ret
-        
-#     def inorderTraversalRecursion(self, root, arr):
-#         if root == None:
-#             return
-#         self.inorderTraversalRecursion(root.left, arr)
-#         arr.append(root.val)
-#         self.inorderTraversalRecursion(root.right, arr)
+    # def inorderTraversal(self, root):
+    #     """
+    #     :type root: TreeNode
+    #     :rtype: List[int]
+    #     """
+    #     ret = []
+    #     self.inorderTraversalRecursion(root, ret)
+    #     return ret
+    #
+    # def inorderTraversalRecursion(self, root, arr):
+    #     if root == None:
+    #         return
+    #     self.inorderTraversalRecursion(root.left, arr)
+    #     arr.append(root.val)
+    #     self.inorderTraversalRecursion(root.right, arr)
     def inorderTraversal(self, root):
         stack = []
         res = []
