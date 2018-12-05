@@ -14,7 +14,7 @@ class Solution(object):
         if largest < second_largest:
             largest, second_largest = second_largest, largest
             ret = 1
-            
+
         for x in range(2, length):
             if nums[x] >= largest:
                 second_largest = largest
@@ -24,7 +24,7 @@ class Solution(object):
                 second_largest = nums[x]
             else:
                 continue
-        if largest >= 2*second_largest:
+        if largest >= 2 * second_largest:
             return ret
         else:
             return -1

@@ -1,3 +1,5 @@
+# -*- encoding:utf-8 -*-
+
 class Solution(object):
     def lengthOfLIS(self, nums):
         """
@@ -36,17 +38,17 @@ class Solution(object):
         # [2, 11, 12, 13, 14]
         # [2, 11, 12, 13, 14]
         # [1, 11, 12, 13, 14]
-        # 最长升序串是 10，11，12，13，14，长度为
+        # 最长升序串是 10，11，12，13，14，长度为 5
         import bisect
         if len(nums) < 2:
             return len(nums)
         res = [nums[0]]
         for num in nums[1:]:
-            if(num == res[-1]):
+            if num == res[-1]:
                 continue
-            if(num > res[-1]):
+            if num > res[-1]:
                 res.append(num)
-            elif(num <= res[0]):
+            elif num <= res[0]:
                 res[0] = num
             else:
                 loc = bisect.bisect_left(res, num)

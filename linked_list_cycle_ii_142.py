@@ -12,17 +12,16 @@ class Solution(object):
         """
         if not head or not head.next or not head.next.next:
             return None
-        
+
         slow, fast = head.next, head.next.next
-        while slow!=fast:
+        while slow != fast:
             if not fast or not fast.next or not fast.next.next:
                 return None
             slow = slow.next
             fast = fast.next.next
-        
+
         slow = head
-        while slow!=fast:
+        while slow != fast:
             slow = slow.next
             fast = fast.next
         return slow
-        

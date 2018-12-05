@@ -3,12 +3,12 @@ class Node(object):
         self.text = ""
         self.content = {}
         self.exists = False
-        
+
     def __str__(self):
         return "Text: " + self.text + ", content: " + str(self.content.items()) + ", exists: " + str(self.exists)
 
-class Trie(object):
 
+class Trie(object):
     def __init__(self):
         """
         Initialize your data structure here.
@@ -30,7 +30,6 @@ class Trie(object):
             cur = cur.content[c]
         cur.exists = True
         return
-        
 
     def search(self, word):
         """

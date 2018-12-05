@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def leafSimilar(self, root1, root2):
         """
@@ -13,7 +14,7 @@ class Solution(object):
         :rtype: bool
         """
         return self.getleaves(root1) == self.getleaves(root2)
-        
+
     def getleaves(self, root):
         res = []
         if not root:
